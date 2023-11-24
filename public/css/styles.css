@@ -1,0 +1,470 @@
+*{  
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    margin: auto;
+}
+
+header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.header-top-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.div-buscador{
+    display: flex;
+    width: 392px;
+    height: 30px;
+    align-self: center;
+    justify-content: center;
+}
+
+.barra-busqueda{    
+    width: 50%;    
+    outline: none;   
+}
+
+.tittle-header{
+    display: flex;    
+    justify-content: center;
+}
+
+.nav-bar{
+    display: none; 
+    flex-wrap: nowrap;
+    margin-top: 15px;    
+}
+
+.nav-bar li{
+  margin: 0 8px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.left-navbar{
+    display: flex;  
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;    
+    margin: 0;
+    padding: 0;        
+}
+
+.right-navbar{
+    display: flex;  
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    width: 50%;  
+    margin: 0;  
+    padding: 0;
+}
+
+.burger-menu{    
+    text-align: center;     
+    margin: auto;       
+}
+
+.fa-bars{
+    background-color: #1259c3;    
+    color: white; 
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;                
+}
+
+.img-Banner{
+    width: 100%;
+    margin: auto;
+}
+
+main{    
+    margin: auto;    
+    width: 90vw;      
+    background-color: #ebebeb;    
+}
+
+.Productos{  
+    display: flex;       
+    flex-wrap: wrap;    
+    
+}
+
+.Productos article{
+    margin:  0 8px;
+}
+
+.Ofertas{
+    display: flex;
+    flex-wrap: wrap;     
+}
+
+.Ofertas article{
+    margin:  0 8px;
+}
+
+.titulares{
+    font-size: 24px;  
+    color: #60686b;
+    font-weight: bolder;    
+}
+
+article{
+    margin-bottom: 10px; 
+    border-top: solid 1px #ebebeb;    
+    margin-top: 0;   
+}
+
+img{
+    width: 100%;    
+}
+
+.caja-articulo{
+    border-top: solid 1px #ebebeb;   
+    padding: 15px;    
+    background-color: white; 
+    width: 100%;  
+    margin-bottom: 10px; 
+}
+
+.precio-descuento{
+    display: flex;    
+    justify-content: space-between; 
+}
+
+.icono-camion{     
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    width: 1.9rem;    /*30px;*/
+    height: 1.9rem;
+    padding: 0.3rem;   /*(3px)*/ 
+    display: block; /*ESTABA EN FLEX*/
+    background-color: white;
+    position: relative;
+    left: 80%;
+    bottom: 3.8vh;
+}
+
+.fa-truck{
+    color: #39b54a;
+}
+
+.precios{
+    font-size: 18px;
+    font-weight: bold;
+    color: #0d0000;
+    width: 30%;
+    text-align: left;   
+}
+
+.descuentos{
+    font-weight: bold;
+    color: #39b54a;
+    align-self: center;
+    width: 70%;
+    text-align: right;
+}
+
+h4.descripciones{
+    display: none;    
+}
+
+.descripciones{
+    color: #7c7269;
+}
+
+.descuentos, .descripciones{
+    font-size: 16px;
+}
+
+footer{
+    text-align: center;    
+    padding: 1%;   
+}
+
+.iconos{
+    font-size: 2em;
+    color: #1259c3;
+}
+
+/*Main Register*/
+
+.section-form{
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: wrap;
+    justify-content: center;  
+    margin-top: 5%; 
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    margin-bottom: 5%;
+
+    .section-form, input{
+        border-radius: 5px;
+        border: 0;
+        width: 100%;  
+        height: 3rem;
+        margin-bottom: 18%;
+        outline: none;
+    }
+
+    .user-profile{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;    
+        align-self: flex-start;    
+    }
+
+    .perfil{
+        display: flex;
+        align-items: center;
+        align-items: center;
+        width: 10%;
+        height: 10%;
+        margin: 0 5%;
+    }
+
+    .interest-category{
+        display: flex;
+        flex-direction: column;   
+        margin-bottom: 3%;     
+    }
+
+    .class-checkbox{
+        display: flex;  
+        align-items: center;          
+        width: 3%;            
+    }      
+
+    .btn{
+        display: flex;
+        flex-direction: column;       
+        
+        .enviar{
+            margin-bottom: 2%;
+            background-color: #1259c3;
+            /*004A4D*/     
+        }
+
+        .borrar{
+            background-color: #1259c3;
+        }
+
+        .enviar:hover{
+            background-color: #0022AA;
+            font-weight: bold;
+        }
+
+        .enviar, .borrar{
+            /* background-color: #1259c3; */
+            color: white; 
+            border: 0;            
+            border-radius: 5px;   
+            width: 100%;
+            height: 100%;
+            padding: 2.5%;
+        }
+
+        /*Tablet login*/
+        @media (min-width: 768px) {    
+
+            .section-form{
+                padding: 1%;
+            }
+
+            .enviar, .borrar{
+                height: 50px;
+                padding: 3%;
+            }
+
+            footer{
+                text-align: center;                
+            }
+        }
+
+        /*computadora login*/
+        @media (min-width: 1024px) and (max-width: 4000px){  
+            .enviar, .borrar{
+                padding: 2%;                
+            }           
+            
+            .section-form{
+                height: 253vh;
+            }
+
+            .interest-category{
+                margin-bottom: 2%;;
+            }
+
+            footer{
+                padding: 1%;
+            }
+        }
+    }
+
+    .div-footer{        
+        border-top: 5%;
+        padding: 15px;          
+    }
+
+}
+
+/*tablet*/
+@media (min-width: 768px) {
+    
+    .header-complet{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .tittle-header{
+        display: flex;    
+        justify-content: flex-end;
+    }
+
+    .nav-bar{
+        display: flex;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .Productos{
+        display: flex;
+        
+    }
+    .Productos, .Ofertas, img{
+        width: 100%;
+    }
+
+    .Productos, .Ofertas{
+        display: flex;
+        justify-content: space-between;        
+    }
+
+    article{
+        width: 40%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .caja-articulo{
+        margin-bottom: 0;
+    }
+
+    .icono-camion{
+        left: 80%;
+        bottom: 4.1vh;
+    }
+
+    article .caja-articulo{
+        width: 100%;        
+    }
+
+    h4.descripciones{
+        display: inline;
+    }
+
+    .div-footer {
+        display: flex;
+    }
+
+    .btn{
+        display: flex;
+        flex-direction: column;           
+        
+        .enviar{
+            margin-bottom: 2%;            
+        }
+    }
+
+    footer{
+        padding: 3%;
+    }
+}
+
+/*Escritorio*/
+@media (min-width: 1024px) {
+
+    a:hover{        
+        color:white;
+    }
+    
+
+    article{
+        width: 20%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);        
+    }
+
+    article:hover{
+        box-shadow: 0 0px 20px rgb(100, 100, 100);
+    }
+
+    .header-complet{
+        display: flex;
+        
+        .logo{
+            width: 30%;
+        }
+    }
+
+    .caja-articulo{
+        margin-bottom: 0;        
+    }
+
+    .Productos, .Ofertas{
+        display: flex;
+        justify-content: space-between;        
+    }
+
+    .icono-camion:hover{
+        transform: rotate(-90deg);
+    }
+
+    .caja-articulo:hover .descripciones{        
+        visibility: visible;
+                  
+    }
+
+    h4.descripciones{           
+        visibility: hidden;             
+    }
+    
+    .div-footer {
+        display: flex;
+
+        .iconos:hover,
+        iconos:active{
+            color: orange;
+        }
+    }
+
+    footer{
+        padding: 3%;
+    }
+}
+
+
+
