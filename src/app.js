@@ -4,7 +4,8 @@ const express = require("express");
 
 const app = express();
 
-app.listen(3030, () => console.log("Mercado Liebre corriendo en: http://localhost:3030/"));
+const port = process.env.PORT || 3030;
+app.listen(port, () => console.log("Mercado Liebre corriendo en: ${port}"));
 
 
 app.get("/", (req, res) => {
